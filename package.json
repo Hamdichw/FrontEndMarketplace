@@ -1,0 +1,64 @@
+{
+  "name": "az-marketplace",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/material": "^5.15.21",
+    "@react-oauth/google": "^0.12.1",
+    "@stripe/react-stripe-js": "^1.16.5",
+    "@stripe/stripe-js": "^1.54.2",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.21.4",
+    "emailjs-com": "^3.2.0",
+    "jwt-decode": "^4.0.0",
+    "mdb-react-ui-kit": "^8.0.0",
+    "mongodb": "^6.8.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.2",
+    "react-hot-toast": "^2.4.1",
+    "react-redux": "^7.2.9",
+    "react-router-dom": "^5.3.4",
+    "react-scripts": "4.0.0",
+    "react-toastify": "^10.0.5",
+    "realm-web": "^1.7.1",
+    "redux": "^4.2.1",
+    "redux-thunk": "^2.4.2",
+    "reselect": "^4.1.8",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "dev": "concurrently \"cd ../backend && npm start\" \"npm start\"",
+    "compile": "yarn install && cd .. && cd backend && yarn install && cd .. && cd client && npm run dev",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:5000",
+  "secure": false,
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
